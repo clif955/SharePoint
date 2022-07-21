@@ -1,0 +1,55 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html >
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="Style/StyleSheet.css" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="wrapper">
+            <div id ="banner">
+
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/images/postcard_yardsale.PNG" Width="100%" />
+
+            </div>
+            <div id="navigation">
+                <ul id="nav">
+                <li>
+                    <asp:HyperLink ID="HyperLink1" runat="server">Jeans</asp:HyperLink></li>
+                <li>
+                    <asp:HyperLink ID="HyperLink2" runat="server">Shirts</asp:HyperLink></li>
+                <li>
+                    <asp:HyperLink ID="HyperLink3" runat="server">Caps</asp:HyperLink></li>
+                <li>
+                    <asp:HyperLink ID="HyperLink4" runat="server">Belts</asp:HyperLink></li>
+                <li>
+                    <asp:HyperLink ID="HyperLink5" runat="server">Accessories</asp:HyperLink></li>
+               <li>
+                    <asp:HyperLink ID="HyperLink6" runat="server">CheckOut</asp:HyperLink></li>
+                    <li>
+                    <asp:HyperLink ID="HyperLink7" runat="server">Management</asp:HyperLink></li>
+                     </ul>
+            </div>
+            <div id="content">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+
+            </div>
+
+        </div>
+
+
+
+
+        
+    </div>
+    </form>
+</body>
+</html>
